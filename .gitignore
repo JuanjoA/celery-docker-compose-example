@@ -1,0 +1,5 @@
+.env
+venv
+venv36
+.vscode
+environment.secret
