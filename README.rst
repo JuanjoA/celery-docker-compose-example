@@ -14,6 +14,7 @@ Install
 ``$ cd celery-docker-compose-example``
 
 ``$ cp environment.secret.template environment.secret``         and configure
+
 ``$ cp environment.secret.template environment.secret.dev``     and configure
 
 ``$ make compose-dev     or    make compose-pro`` 
