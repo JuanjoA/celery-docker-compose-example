@@ -13,7 +13,10 @@ Install
 
 ``$ cd celery-docker-compose-example``
 
-``$ touch environment.secret``
+``$ cp environment.secret.template environment.secret``         and configure
+``$ cp environment.secret.template environment.secret.dev``     and configure
+
+``$ make compose-dev     or    make compose-pro`` 
 
 Use
 ---
@@ -37,13 +40,14 @@ Tests
 -----
 
 Launch test1:
+   
 
-    ``./test1.sh``  or maybe  ``chmod +x test1.sh;./test1.sh``  or ``bash test1.sh``  or . . . :-)
+    ``$ make test1``
 
 
 Launch test2:
 
-    ``./test2.sh``  or maybe  ``chmod +x test2.sh;./test2.sh``  or ``bash test2.sh``  or . . . :-)
+    ``$ make test2``
 
     You can see now logs and flower changes.
 
